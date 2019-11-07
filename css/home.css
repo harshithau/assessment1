@@ -5,10 +5,11 @@
 }
 .container{
 	display: grid;
-	grid-template-columns:  40px 120px 90px 90px  90px 90px 350px 90px;
+	grid-template-columns:  40px 120px 90px 90px  90px 90px 200px 90px;
 	text-align: center;
-	margin-right: 200px;
+	/*margin-right: 200px;*/
 	position: fixed;
+	margin-left: 150px;
 }
 .home{
 	text-decoration: none;
@@ -46,11 +47,13 @@
 	width:993px;
 	height: 400px;
 	margin-top: 50px;
+	margin-left: 150px;
+	margin-bottom: 250px;
 }
 p{
 	color: #ffffff;
 	font-size: 40px;
-	margin-top: -300px;
+	margin-top: -500px;
 	margin-left: 440px;
 }
 .about{
@@ -72,4 +75,9 @@ p{
 	background-color: #ff0000;
 	margin-left: 550px;
 	margin-top: 30px;
+}
+.waste{
+	margin-top: 100px;
+	background-color: #ffffff;
+	height: 40px;
 }
