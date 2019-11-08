@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="./css/fourth.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+<div >
+	<nav class="container1">
+		 <i class='fas fa-dice-d20' style='font-size:48px;color:red'><label class="logo"></i><label class="logo">Pointer.</label></label></i>
+			<a href="home.html" class="home">Home</a>
+			<a href="#about" class="About">About Us</a>
+			<a href="#team" class="Team">Team</a>
+			<a href="fourth.html" class="Events">Events</a>
+			<a href="sign.html" class="Sing">Sign In</a>
+			<a href="login.html" class="Log">Log In</a>
+	</nav>
+<div class="body">
+<div class="main">
+	<p><script type="text/javascript" src="./javascript/fourth.js"></script></p>
+	<p class="time"><span id="date_time"></span>
+          <script type="text/javascript">window.onload = date_time('date_time');</script></p>
+	<p class="events">Temp <br><i class='fas fa-cloud-sun-rain'></i> <br> 58F</p>
+	<p class="events">Signal<br><br><i class="fa fa-wifi" aria-hidden="true"></i></p>
+</div>
+	<div id="pp" class="para" >
+	<div>Fri <br> 4 <br> MAY</div>
+	<div><img class="imgp" src="./img/party.webp"></div>
+<div class="images">"Pool party redirects here, see pool"</h4> <br> A pool party is a celebration that includes activitites in a swimming pool for guests.The party can be a wet and wild time if children are invited to the party.</div>
+<button class="edit"><i class="fas fa-edit"></i>Edit</button>
+<button class="delete" onclick="functionName()"><i class="fas fa-times"></i>Delete</button>
+</div><br><br>
+<div class="para">
+	<div>Wed <br> 15 <br> March</div>
+	<div><img class="imgp" src="./img/party1.jpeg"></div>
+			<div class="images">"Pool party redirects here, see pool"</h4> <br> A pool party is a celebration that includes activitites in a swimming pool for guests.The party can be a wet and wild time if children are invited to the party.</div>
+			<div>10:30-7:30PM</div>
+		</div>
+		<br><br>
+		<div class="para">
+			<div>Sat <br> 25 <br> August</div>
+			<div><img class="imgp" src="./img/party2.jpeg"></div>
+			<div class="images">"Pool party redirects here, see pool"</h4> <br> A pool party is a celebration that includes activitites in a swimming pool for guests.The party can be a wet and wild time if children are invited to the party.</div>
+			<div>10:30-7:30PM</div>
+		</div>
+		<section id="calendar">
+			
+
+
+<script type="text/javascript">
+<!-- Begin Hiding
+var today = new Date();
+var month = today.getMonth();
+Date.prototype.getMonthNames = function() { return [ 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ]; }
+Date.prototype.getDaysInMonth = function() 
+{ 
+	return new Date( this.getFullYear(), this.getMonth() + 1, 0 ).getDate();
+ }
+Date.prototype.calendar = function()
+{  
+	var numberOfDays = this.getDaysInMonth();
+var startingDay = new Date(this.getFullYear(), this.getMonth(), 1).getDay();
+   var calendarTable = '<table summary="Calendar" class="calendar" style="text-align: center;">';
+calendarTable += '<caption>' + this.getMonthNames()[this.getMonth()] + '&nbsp;' + this.getFullYear() + '</caption>';
+calendarTable += '<tr><td colspan="7"></td></tr>';
+calendarTable += '<tr>';
+calendarTable += '<td><font color="#B42600">S</font></td>';
+calendarTable += '<td>M</td>';
+calendarTable += '<td>T</td>';
+calendarTable += '<td>W</td>';
+calendarTable += '<td>TH</td>';
+calendarTable += '<td>F</td>';
+calendarTable += '<td>S</td></tr>'; 
+for ( var i = 0; i < startingDay; i++ ) 
+{ calendarTable += '<td>&nbsp;</td>'; }
+var border = startingDay;
+for ( var id = '',  i = 1; i <= numberOfDays; i++ ) 
+{ if (( month == month ) && ( today.getDate() == i )) { id = 'id="current_day"'; } 
+else { id = ''; }
+calendarTable += '<td ' + id + '>' + i + '</td>'; border++;
+if ((( border % 7 ) == 0 ) && ( i < numberOfDays )) 
+{ 
+calendarTable += '<tr></tr>'; } } 
+while(( border++ % 7)!= 0) 
+{ calendarTable += '<td>&nbsp;</td>'; } 
+calendarTable += '</table>';
+return calendarTable; }
+window.onload = function() {
+selected_month = '<form name="month_holder">';
+selected_month += '<select id="month_items" size="1" onchange="month_picker();">';
+for ( var x = 0; x <= today.getMonthNames().length; x++ ) { selected_month += '<option value="' + today.getMonthNames()[x] + ' 1, ' + today.getFullYear() + '">' + today.getMonthNames()[x] + '</option>'; }
+selected_month += '</select></form>';
+actual_calendar = document.getElementById('show_calendar');
+actual_calendar.innerHTML = today.calendar();
+var month_listing = document.getElementById('current_month');
+month_listing.innerHTML = selected_month;
+actual_month = document.getElementById('month_items');
+actual_month.selectedIndex = month;
+}
+function month_picker()
+{ month_menu = new Date(actual_month.value);
+actual_calendar.innerHTML = month_menu.calendar();
+}
+</script>
+<p>&nbsp</p>
+<div id="show_calendar">&nbsp;</div>
+<div id="current_month">&nbsp;</div>
+</body>
+</html>
+		</section>
+	</body>
+	</html>
+			
+			
+			 

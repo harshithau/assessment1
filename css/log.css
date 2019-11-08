@@ -1,0 +1,45 @@
+body{
+border:40px solid gray;
+width:300px;
+margin-left:400px;
+}
+h1{
+padding-left: 90px;
+margin-top: -38px;
+}
+.input{
+padding: 10px;
+margin-left: 50px;
+}
+.singin1{
+margin-left: 96px;
+border:1px solid #3aa0b7;
+border-radius: 20px;
+padding: 10px;
+padding-left:30px;
+padding-right: 30px; 
+background-color: #3aa0b7;
+}
+.hint{
+padding-left: 126px;
+margin-top: 1px;
+color:#3aa0b7;
+}
+.singin{
+border:2px solid black;
+border-radius: 10px;
+margin-left: 20px;\
+color: #34919ad6;
+margin-top: 30px;
+}
+.container{
+background-color:#6f68569e;
+}
+.form{
+margin-left: 130px;
+padding-bottom: 30px;
+}
+label{
+margin-left: 50px;
+}
+

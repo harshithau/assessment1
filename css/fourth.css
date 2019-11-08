@@ -1,10 +1,118 @@
-.timecontainer{
+	.main{
 	display: grid;
-	grid-template-columns: 120px 120px 120px 120px;
-	grid-gap: 10px;
-	color:black;
-	font-size: 30px;
-	border: 2px solid black;
-	height: 40px;
+	grid-template-columns: 80px 80px 80px 80px;
+	justify-content: space-between;
+	width: 400px;
+	text-align: center;
+	margin-	left: 30px;
+	}
+	.events{
+	background-color:#8e949e8f;
+	}
+	.imgp{
+	width: 80px;
+	height: 80px;
+	}
+	.para{
+	display: flex;
+	justify-content: space-between;
+	width: 650px;
+	padding-top: 6px;
+	background-color:#fff;
+	margin-left: 50px;
 
-}
+	}
+	.images{
+	width: 400px;
+	font-size: 14px;
+	}
+	.edit{
+	width: 70px;
+	height: 30px;
+	border-radius: 10px;
+	border-color: #458bff;
+	background-color: #85aced;
+	  position: relative;
+	}
+
+	.delete{
+	width: 70px;
+	height: 30px;
+	border-radius: 10px;
+	border-color: #458bff;
+	background-color: #85aced;
+	margin-top: 40px;
+	margin-left: -90px;
+	}
+	body{
+	background-color: #dcdcdc;
+	margin:40px;
+	}
+	.time{
+	background-color:#8e949e8f; 
+	}
+	.container1{
+	display: grid;
+	grid-template-columns:  40px 120px 90px 90px  90px 90px 200px 90px;
+	text-align: center;
+	background-color: #FFFFFF;
+	width:100%;
+	height: 30px;
+	padding: 40px;
+	margin-left: -40px;
+
+	margin-top: -30px;
+	}
+	.home{
+	text-decoration: none;
+	font-size: 20px;
+	margin-top: 10px;
+
+
+	}
+	.About{
+	text-decoration: none;
+	font-size: 20px;
+	margin-top: 10px;
+	}
+	.Team{
+	text-decoration: none;
+	font-size: 20px;
+	margin-top: 10px;
+
+	}
+	.Events{
+	text-decoration: none;
+	font-size: 20px;
+	color:#ff0000;
+	margin-top: 10px;
+	}
+	.logo{
+	font-size: 30px;
+	color: #ff0000;
+	margin-top: 04px;
+
+	}
+	.logo{
+	font-size: 30px;
+	color: #ff0000;
+	margin-top: 04px;
+	}
+	.Sing{
+	text-decoration: none;
+	font-size: 20px;
+	margin-top: 10px;
+	}
+	.Log{
+	text-decoration: none;
+	font-size: 20px;
+	margin-top: 10px;
+	}
+	#current_day { 	
+	background-color:yellow; 
+	font-weight: bold; 
+	} 
+	#calendar{
+	margin-left:766px;
+	margin-top: -444px;
+	}

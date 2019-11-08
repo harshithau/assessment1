@@ -1,26 +1,52 @@
- var myDate = new Date();
-    var hrs = myDate.getHours();
-
-    var greet;
-
-    if (hrs < 12)
-        greet = 'Good Morning';
-    else if (hrs >= 12 && hrs <= 16)
-        greet = 'Good Afternoon';
-    else if (hrs >= 16 && hrs <= 24)
-        greet = 'Good Evening';
-
-    document.getElementById('lblGreetings').innerHTML =
-        '<b>' + greet + '</b> ';
-document.getElementById("para1").innerHTML = formatAMPM();
-
-function formatAMPM() {
-var d = new Date(),
-    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-    ampm = d.getHours() >= 12 ? 'pm' : 'am',
-    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+var day = new Date();
+var hr = day.getHours();
+if (hr >= 0 && hr < 12) {
+ time();
+} else if (hr == 12) {
+  document.write("Good Afternoon!" +"<br>");
+} else if (hr >= 12 && hr <= 17) {
+  document.write("Good Evening!"+"<br>");
+} else {
+  document.write("Good night !" +"<br>");
 }
-			
+var x= "user";
+document.write(x);
+
+
+
+function functionName() {
+    var x = document.getElementById("pp");
+    if(x.style.display==="none")
+      x.style.display="block";
+    else
+      x.style.display="none";
+  }
+  function date_time(id)
+{
+      date = new Date;
+      year = date.getFullYear();
+      month = date.getMonth();
+      months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'Jully', 'August', 'September', 'October', 'November', 'December');
+      d = date.getDate();
+      day = date.getDay();
+      days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+      h = date.getHours();
+      if(h<10)
+      {
+              h = "0"+h;
+      }
+      m = date.getMinutes();
+      if(m<10)
+      {
+              m = "0"+m;
+      }
+      s = date.getSeconds();
+      if(s<10)
+      {
+              s = "0"+s;
+      }
+      result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+      document.getElementById(id).innerHTML = result;
+      setTimeout('date_time("'+id+'");','1000');
+      return true;
+}

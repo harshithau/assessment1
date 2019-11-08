@@ -1,9 +1,10 @@
+.head{
+  color:red;
+  font-size: 20px;
 
-
-
+}
 img{
-    
-    margin-bottom: 50px;
+     margin-bottom: 50px;
   } 
   .slides {
   
@@ -34,7 +35,10 @@ img{
  border:2px solid red;
  border-radius: 40px;
  }
-
+.names{
+  padding: 20px;
+  margin-top: -20px;
+}
 
 
 

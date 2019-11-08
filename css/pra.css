@@ -12,17 +12,19 @@
 	grid-template-rows: 190px 50px 194px;
 	grid-gap: 0px 40px;
 }
-.list{
-	width:160px;
-	height: 100px;
-}
+
 .names{
 	margin-right: 15px;
+  margin: 80px;
 	background-color: #80808026;
 }
 .list {
   position: relative;
   width: 10%;
+}
+img{
+    width:160px;
+  height: 130px;
 }
 
 .image {
